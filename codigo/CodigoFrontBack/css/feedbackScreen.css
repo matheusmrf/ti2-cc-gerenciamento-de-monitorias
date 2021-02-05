@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    transition: margin-left .5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#forms{
+    padding-top:160px;
+}
+#campoTexto{
+    width: 50%;
+    height: 100px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    
+}
+.sidenav {
+    text-align: center;
+    padding-top: 15px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 8px !important;
+    font-size: 18px;
+}
+.sidenav a:hover {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #005784;
+    color: white;
+    text-align: center;
+}
+.card{
+    margin-bottom: 25px;
+    padding:8px;
+    background-color: #d2f0ff;
+    border-color: #f8f8f8;
+    box-shadow: 8px 8px  #ededed;
+}
+/*Fim Navigation Side Bar*/
+
+section {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+#forms {
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@rodrigogitrep 
+icei-pucminas
+/
+ti2-cc-gerenciamento-de-monitorias
+Private
+5
+10
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+ti2-cc-gerenciamento-de-monitorias/codigo/CodigoFrontBack/css/addMonitoria.css
+@mllbueno
+mllbueno fix add monitoria card
+Latest commit 3ea6259 1 hour ago
+ History
+ 3 contributors
+@mllbueno@rodrigogitrep@wampxs
+55 lines (45 sloc)  927 Bytes
+  
+body {
+    margin: 0px;
+    padding: 0px;
+    transition: margin-left .5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {}
+
+.sidenav {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px !important;
+    font-size: 18px;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #005784;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+    background-color: #d2f0ff;
+    border-color: #f8f8f8;
+    box-shadow: 8px 8px #ededed;
+}

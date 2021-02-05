@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <script>
+        onload = () => {
+            pegarNomeLS();
+            let btn = document.getElementById('btn-sair');
+            btn.onclick = () => {
+                localStorage.clear();
+                window.location.replace("./../html/index.html");
+            }
+        }
+    </script>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="./../js/cadastrarMonitoria.js"></script>
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../css/cadastrarMonitoria.css">
+    <link rel="stylesheet" type="text/css" href="./../css/chat.css">
+    <script src="./../js/chat.js"></script>
+</head>
+
+<body id="main">
+    <header class="header">
+        <!-- Use any element to open the sidenav -->
+        <button onclick="openNav()" style="width: 50px;" id="menuBtn"><i class="fas fa-bars btn"></i></button>
+        <button id="btn-sair" class="btn">Sair da Conta</button>
+    </header>
+
+    <div id="nav-bar-type">
+        <!--GERADO POR JS-->
+        
+        <!--/GERADO POR JS-->
+    </div>
+    <main style="padding: 20px;">
+        <h1>Adicionar monitoria</h1>
+        <div id="campo-inputs">
+            <form>
+                <div>
+                    <label>Atividade (ex: Monitoria de Calculo I):</label>
+                    <div class="row">
+                        <input autocomplete="off" type="text" id="atividade" aria-describedby="Atividade" placeholder="Nome atividade">
+                    </div>
+                </div>
+                <div>
+                    <label>Data:</label>
+                    <div class="row">
+                        <input autocomplete="off" style="width: 100px;" min="1" max="31" type="number" id="dataDia" placeholder="Dia">/
+                        <input autocomplete="off" style="width: 100px;" min="1" max="12" type="number" id="dataMes" placeholder="Mes">/
+                        <input autocomplete="off" style="width: 100px;" min="1990" max="2030" type="number" id="dataAno" placeholder="Ano">
+                    </div>
+                </div>
+                <div>
+                    <label>Horário:</label>
+                    <div class="row">
+                        <input autocomplete="off" style="width: 100px;" min="0" max="23" type="number" id="dataHora" placeholder="Hora"> :
+                        <input autocomplete="off" style="width: 100px;" min="0" max="59" type="number" id="dataMinuto" placeholder="Minuto">
+                    </div>
+                </div>
+                <div>
+                    <label for="scales">A aula é presencial?</label>
+                    <div class="row">
+                        <input type="checkbox" id="checkbox" name="scales" nochecked>
+                    </div>
+                </div><br>
+                <div>
+                    <label>Sala:</label>
+                    <div class="row">
+                        <input autocomplete="off" min="1" type="number" id="sala" placeholder="Sala">
+                    </div>
+                </div>
+                <div>
+                    <label>Prédio:</label>
+                    <div class="row">
+                        <input autocomplete="off" min="1" type="number" id="predio" placeholder="Prédio">
+                    </div>
+                </div>
+                <br>
+            </form>
+            <div class="row">
+                <button class="btn btn-primary" id="btn-adicionar">Adicionar Monitoria</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        Copyright 2020() Monitoria Teams
+    </footer>
+
+    <link rel="stylesheet" href="./../css/cadastrarMonitoria.css">
+</body>
+
+</html>
